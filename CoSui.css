@@ -1,0 +1,52 @@
+#sidebar {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 350px !important;
+    height: 99vh;
+    overflow: hidden;
+    margin: 0;
+    border: 30px solid transparent;
+    border-image-source: url(/modules/CoSui/ui/img/sidebarwood.webp);
+    border-image-slice: 30 fill;
+    background-position: center !important;
+    background-size: 300px 100%!important;
+    background-repeat: no-repeat;
+}
+
+.collapse::before{
+    content: "";
+}
+
+#sidebar.collapsed {
+    width: 75px !important;
+    height: 410px !important;
+    padding-left: 5px;
+    border: 15px solid transparent;
+    border-image-source: url(/modules/CoSui/ui/img/sidebarwood.webp);
+    border-image-slice: 35 fill;
+    background-position: center !important;
+    background-size: 100% 100%!important;
+    background-repeat: no-repeat;
+}
+/* #region Chat Tab*/
+.message{
+    background-image: url(/modules/CoSui/ui/img/chatcard.webp) !important;
+}
+#chat-message{
+    background-image: url(/modules/CoSui/ui/img/ravenchat.webp) !important;
+}
+.window-app {
+  border: 20px solid transparent;
+  border-image-source: url(/modules/CoSui/ui/img/brickborder.webp);
+  border-image-slice: 20 fill;
+  border-image-repeat: repeat;
+}
+.dialog .dialog-buttons button {
+  background-image: url(/modules/CoSui/ui/img/bloodbutton.webp);
+  border: 2px groove #f0f0e0;
+  margin: 0 5px 0 0;
