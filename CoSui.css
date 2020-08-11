@@ -10,9 +10,9 @@
     height: 99vh;
     overflow: hidden;
     margin: 0;
-    border: 30px solid transparent;
+    border: 26px solid transparent;
     border-image-source: url(/modules/CoSui/ui/img/sidebarwood.webp);
-    border-image-slice: 30 fill;
+    border-image-slice: 26 fill;
     background-position: center !important;
     background-size: 300px 100%!important;
     background-repeat: no-repeat;
