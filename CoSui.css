@@ -1,3 +1,9 @@
+/* Mouse over */
+a:hover {
+    text-shadow: 0 0 8px #FF0000;
+}
+/* Sidebar */
+
 #sidebar {
 
     display: flex;
@@ -11,7 +17,7 @@
     overflow: hidden;
     margin: 0;
     border: 26px solid transparent;
-    border-image-source: url(/modules/CoSui/ui/img/sidebarwood.webp);
+    border-image-source: url(/modules/HorrorUI/ui/img/sidebarwood.webp);
     border-image-slice: 26 fill;
     background-position: center !important;
     background-size: 300px 100%!important;
@@ -23,30 +29,406 @@
 }
 
 #sidebar.collapsed {
-    width: 75px !important;
-    height: 410px !important;
-    padding-left: 5px;
-    border: 15px solid transparent;
-    border-image-source: url(/modules/CoSui/ui/img/sidebarwood.webp);
+    width: 37px !important;
+    height: 349px !important;
+    padding-left: 4px;
+    border: 0px solid transparent;
+    border-image-source: url(/modules/HorrorUI/ui/img/sidebarwood.webp);
     border-image-slice: 35 fill;
-    background-position: center !important;
-    background-size: 100% 100%!important;
-    background-repeat: no-repeat;
+    background: none !important;
 }
+#sidebar-tabs{
+    text-align: center;
+    border-bottom: 1px solid #FF0000;
+    box-shadow: 0 0 10px #FF0000;
+    height: 32px;
+    background: #000000;
+}
+#sidebar #sidebar-tabs > .item {
+    line-height: 0px;
+}
+
+i.fa-caret-right::before{
+    content: "";
+
+}
+/* Bloody Logo */
+#logo {
+    background-image: url(/modules/HorrorUI/ui/img/bloodfvtt.webp);
+}
+
+/*
+Sidebar Tabs Icons
+*/
+
+.fa-caret-right{
+    background-image: url("/modules/HorrorUI/ui/img/rightArrow.webp") !important;
+    width: 25px;
+    height: 25px;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:20px 15px !important;
+    background-repeat: no-repeat;
+    content: "";
+    text-align: center;
+}
+
+i.fa-caret-left::before{
+    content: "";
+
+}
+
+.fa-caret-left{
+    background-image: url("/modules/HorrorUI/ui/img/leftArrow.webp") !important;
+    width: 25px;
+    height: 25px;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:20px 15px !important;
+    background-repeat: no-repeat;
+    content: "";
+    text-align: center;
+    vertical-align: top;
+}
+
+#sidebar #sidebar-tabs i.fa-comments {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/chat.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+#sidebar-tabs > .item {
+    line-height: 0px;
+    height: 32px;
+}
+#sidebar-tabs > .item:hover {
+  box-shadow: 0 0 3px #D10303 inset;
+}
+#sidebar-tabs > .item.active {
+    border: 1px solid #D10303;
+    box-shadow: 0 0 4px #D10303 inset;
+}
+#sidebar #sidebar-tabs i.fa-comments::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-fist-raised {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/Combat.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+.sidebar-tab .directory-list .directory-item.active {
+    border-color: rgb(255, 0, 0, .6);
+    background-color: rgb(255, 150, 150, .1) !important;
+}
+
+#sidebar #sidebar-tabs i.fa-fist-raised::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-map {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/scenes.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-map::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-users {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/actors.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-users::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-suitcase {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/items.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-suitcase::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-book-open {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/journal.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-book-open::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-th-list {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/tables.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-th-list::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-music {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/playlist.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-music::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-atlas {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/compendiums.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-atlas::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-cogs {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/options.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-cogs::before {
+    content: "";
+}
+.sidebar-tab .directory-list .entity {
+    text-shadow: 1px 2px black;
+}
+/* #endregion */
+
 /* #region Chat Tab*/
 .message{
-    background-image: url(/modules/CoSui/ui/img/chatcard.webp) !important;
+    background-image: url(/modules/HorrorUI/ui/img/chatcard.webp) !important;
 }
 #chat-message{
-    background-image: url(/modules/CoSui/ui/img/ravenchat.webp) !important;
+    background-image: url(/modules/HorrorUI/ui/img/ravenchat.webp) !important;
 }
 .window-app {
   border: 20px solid transparent;
-  border-image-source: url(/modules/CoSui/ui/img/brickborder.webp);
+  border-image-source: url(/modules/HorrorUI/ui/img/brickborder.webp);
   border-image-slice: 20 fill;
   border-image-repeat: repeat;
 }
 .dialog .dialog-buttons button {
-  background-image: url(/modules/CoSui/ui/img/bloodbutton.webp);
+  background-image: url(/modules/HorrorUI/ui/img/bloodbutton.webp);
   border: 2px groove #f0f0e0;
   margin: 0 5px 0 0;
+}
+.roll-type-select{
+    color: white !important;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#chat-controls .control-buttons{
+    color: white;
+}
+/* navigation scene list */
+#scenes .scene h3 {
+    line-height: 43px;
+    text-shadow: 2px 1px 2px #000;
+}
+#scenes .scene {
+    height: 48px;
+}
+#controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
+    border: 2px solid #880000;
+    border-bottom: 2px solid #880000;
+    box-shadow: 0 0 10px #770000;
+    background: rgba(109, 0, 0, .9) !important;
+}
+
+#controls .scene-control, #controls .control-tool {
+    width: 33px;
+    height: 33px;
+    box-sizing: content-box;
+    font-size: 25px;
+    line-height: 33px;
+    margin: 0 0 4px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Navigation Buttons */
+#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+    border: 2px solid #550000 !important;
+    background: rgba(52, 52, 52, 1) !important;
+    box-shadow: 0 0 4px #550000;
+}
+
+#navigation .nav-item {
+    border: 1px solid #330000 !important;
+    line-height: 30px;
+    padding: 0px 1px;
+    margin: 0 5px 8px 0;
+    border-radius: 0px;
+    background: rgba(52, 52, 52, 0.50) !important;
+
+}
+
+#navigation .nav-item:hover {
+  box-shadow: inset 0px 0px 0px 1px white;
+  background: rgba(70, 52, 52, .80) !important;
+
+}
+/* Combat Utility Belt compatibility fix */
+.cub-puter-crt .window-content {
+    background: black !important;
+}
+
+/* #region Remove speaker name background colors in Chat window */
+#chat-log .message .message-header .message-sender {
+    background-color: rgba(0,0,0,0) !important;
+}
+/* Macro Bar */
+#hotbar .macro.inactive:hover {
+    box-shadow: 0 0 28px #660000 inset;
+    border: 1px solid #550000;
+}
+#hotbar .macro.active:hover {
+    border: 1px solid #880000;
+    box-shadow: 0 0 8px #770000 inset;
+}
+button:hover {
+    cursor: pointer !important;
+}
+.dice-roll .dice-total:hover, .dice-formula:hover {
+  cursor: pointer;
+}
+.window-app.minimized{
+    border: 0px solid #000000;
+}
+.window-app.minimized .window-header {
+    border: 0px solid #000;
+}
+/* ConditionIconHoverZoom */
+#token-hud .status-effects .effect-control:hover {
+    opacity: 1;
+    width: 70px;
+    height: 70px;
+}
+#token-hud .status-effects {
+    width: auto;
+    grid-template-columns: 50px 50px 50px 50px;
+}
+#token-hud .status-effects .effect-control {
+    width: 50px; height: 50px;
+}
+img.effect-control:hover {
+    max-width: 200%;
+    max-height: 200%;
+}
+#midi-qol-config {
+  width: 560px !important;
+}
+#client-settings {
+  border: 0px !important;
+}
+.filepicker {
+  width: 560px !important;
+}
+.dark-mode .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
+
+    font-size: 11px;
+}
+/* Calendar */
+#calendar {
+    background: rgba(0, 0, 0, 0.7);
+}
+#calendar-btn-day {
+    color: #bdbd7e;
+}
+#calendar-btn-night {
+    color: lightblue;
+}
+#calendar-btn-quick {
+    color: #a03448;
+}
+#calendar-btn-long {
+    color: #a03448;
+}
+#calendar-btn-fiveMin {
+    color: #a03448;
+}
+#calendar-btn-min {
+    color: #a03448;
+}
+#calendar-events {
+    color: whitesmoke;
+}
+#calendar-events:hover {
+    color: #f1ff1a;
+}
+#calendar-weather {
+    color: #aba9a9 !important;
+}
+#calendar-weather:hover {
+  color: white !important;
+}
+#calendar-btn-sec {
+    color: #a03448 !important;
+    cursor: pointer;
+}
+#calendar-btn-sec:hover {
+  color:white !important;
+}
+#calendar-btn-halfMin {
+    color: #a03448 !important;
+    cursor: pointer;
+}
+#calendar-btn-halfMin:hover{
+  color:white !important;
+}
