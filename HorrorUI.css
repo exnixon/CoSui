@@ -12,7 +12,7 @@ a:hover {
     position: fixed;
     right: 5px;
     top: 5px;
-    width: 350px !important;
+    width: 350px;
     height: 99vh;
     overflow: hidden;
     margin: 0;
@@ -431,4 +431,27 @@ img.effect-control:hover {
 }
 #calendar-btn-halfMin:hover{
   color:white !important;
+}
+/* dark mode */
+
+.dark-mode .dialog .dialog-buttons button {
+  background-image: url(/modules/HorrorUI/ui/img/dialogbuttonDark.png);
+  background-size: cover;
+}
+.dark-mode .message{
+    background-image: url("/modules/HorrorUI/ui/img/BG2.webp") !important;
+}
+.dark-mode #chat-message{
+    background-image: url(/modules/HorrorUI/ui/img/ravenchatDark.webp) !important;
+}
+
+.dark-mode .polyglot-lang-select select {
+    background: url(/modules/HorrorUI/ui/img/BG2.webp) repeat !important;
+}
+.dark-mode .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
+
+    font-size: 11px;
+}
+#chat-controls {
+    margin: -17px 6px;
 }
