@@ -9,7 +9,7 @@
   "esmodules": [],
   "packs": [],
   "url": "https://github.com/exnixon/CoSui/",
-  "manifest": "https://github.com/exnixon/CoSui/releases/download/latest/module.json",
+  "manifest": "https://raw.githubusercontent.com/exnixon/CoSui/master/module.json",
   "download": "https://github.com/exnixon/CoSui/releases/download/v0.4.0/CoSui.zip",
   "minimumCoreVersion": "9.0",
   "compatibleCoreVersion": "9.249"
