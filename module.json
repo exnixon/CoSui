@@ -2,15 +2,15 @@
   "name": "HorrorUI",
   "title": "Gothic Horror UI",
   "description": "A Gothic Horror flavored UI for Foundry VTT.",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "author": "Sparkasaurusmex",
   "scripts": [ "HorrorUI.js" ],
   "styles": [ "HorrorUI.css" ],
   "esmodules": [],
   "packs": [],
-  "url": "https://github.com/Sparkasaurusmex/CoSui/",
-  "manifest": "https://raw.githubusercontent.com/Sparkasaurusmex/CoSui/master/module.json",
-  "download": "https://github.com/Sparkasaurusmex/CoSui/releases/download/0.3.2/HorrorUI.zip",
-  "minimumCoreVersion": "0.5.5",
-  "compatibleCoreVersion": "0.6.6"
+  "url": "https://github.com/exnixon/CoSui/",
+  "manifest": "https://raw.githubusercontent.com/exnixon/CoSui/master/module.json",
+  "download": "https://github.com/exnixon/CoSui/releases/download/0.4.0/CoSui.zip",
+  "minimumCoreVersion": "9.0",
+  "compatibleCoreVersion": "9.249"
 }

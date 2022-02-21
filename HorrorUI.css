@@ -5,14 +5,13 @@ a:hover {
 /* Sidebar */
 
 #sidebar {
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     position: fixed;
     right: 5px;
     top: 5px;
-    width: 350px;
+    width: 375px;
     height: 99vh;
     overflow: hidden;
     margin: 0;
@@ -30,7 +29,7 @@ a:hover {
 
 #sidebar.collapsed {
     width: 37px !important;
-    height: 349px !important;
+    height: auto !important;
     padding-left: 4px;
     border: 0px solid transparent;
     border-image-source: url(/modules/HorrorUI/ui/img/sidebarwood.webp);
@@ -44,6 +43,11 @@ a:hover {
     height: 32px;
     background: #000000;
 }
+
+#sidebar.collapsed #sidebar-tabs{
+    height: auto;
+}
+
 #sidebar #sidebar-tabs > .item {
     line-height: 0px;
 }
@@ -145,6 +149,16 @@ i.fa-caret-left::before{
 
 #sidebar #sidebar-tabs i.fa-map::before {
     content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-id-badge {
+    content: "";
+    background-image: url("/modules/HorrorUI/ui/img/cards.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
 }
 
 #sidebar #sidebar-tabs i.fa-users {
