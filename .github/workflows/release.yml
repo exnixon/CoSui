@@ -17,6 +17,8 @@ jobs:
       - uses: ncipollo/release-action@v1
         with:
           artifacts: CoSui.zip, module.json
-          body: Gothic UI release $env.GITHUB_REF_NAME $GITHUB_REF_NAME ${{ env.GITHUB_REF_NAME }}
+          body: Gothic UI for Foundry VTT
           token: ${{ secrets.GITHUB_TOKEN }}
           generateReleaseNotes: true
+      - name: Run latest-tag
+        uses: EndBug/latest-tag@latest
