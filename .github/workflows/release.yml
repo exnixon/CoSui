@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags:
+    - 'v*'
+
+jobs:
+  release-module:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: papeloto/action-zip@v1
+        with:
+          files: ui/ HorrorUI.css HorrorUI.js module.json
+          dest: CoSui.zip
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: CoSui.zip, module.json
+          body: Gothic UI release $env.GITHUB_REF_NAME $GITHUB_REF_NAME ${{ env.GITHUB_REF_NAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          generateReleaseNotes: true
